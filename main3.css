@@ -1,0 +1,126 @@
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face
+{
+    font-family: 'Roboto';
+    src: url('/fonts/Roboto-Light.ttf');
+    font-weight: 300;
+}
+:root
+{
+    --topbar-color: #2CC09C;
+    --topbar-background: #212529;
+}
+*
+{
+    box-sizing: border-box;
+}
+.topbar
+{
+    background: var(--topbar-background);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;    
+    color: #FFF;
+}
+.topbar-container
+{
+    max-width: 1016px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon
+{
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+.topbar ul
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.topbar li,
+.topbar a
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    transition: color 0.3s;
+}
+.topbar li
+{
+    padding: 0 8px;
+}
+.topbar a
+{
+    color: inherit;
+    text-decoration: none;
+}
+.topbar-container li:last-child
+{
+    font-weight: 300;
+}
+.topbar-infos
+{
+    background: var(--topbar-color);
+}
+.topbar .topbar-lang
+{
+    margin-left: auto;
+}
+.topbar-links .icon
+{
+    color: var(--topbar-color);
+}
+.topbar-links a:hover
+{
+    color: var(--topbar-color);
+}
+.topbar-lang a::after
+{
+    display: inline-block;
+    content: '';
+    width: 7px;
+    height: 6px;
+    margin-left: 3px;
+    background: url('/images/polygon.svg');
+}
+@media only screen and (min-width: 900px)
+{
+    .topbar
+    {
+        font-size: 1.166rem;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(to right, var(--topbar-color), var(--topbar-color) 50%,
+            var(--topbar-background) 50.01%, var(--topbar-background));
+    }
+    .topbar li,
+    .topbar a
+    {
+        height: 55px;
+    }
+    .icon
+    {
+        width: 16px;
+        height: 16px;
+    }
+    .topbar-infos li:last-child
+    {
+        background: var(--topbar-background);
+        padding: 0;
+    }
+    .topbar-infos li:last-child::before
+    {
+        content: '';
+        display: inline-block;
+        margin-right: 15px;
+        border-right: solid 30px transparent;
+        border-bottom: solid 55px var(--topbar-color);
+    }
+}
