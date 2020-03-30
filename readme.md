@@ -15,8 +15,6 @@ liste :
     * sous item 2
 * item 3
 
-![texte alternatif image](https://picsum.photos/id/1/200/300 "Titre, image")
-
 code :
 ```
 function redim_png () {
