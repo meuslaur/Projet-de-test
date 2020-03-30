@@ -7,7 +7,7 @@ test push
 ~~Texte barré~~
 
 [lien vers git hub]
-{https://github.com "titre lien"}
+(https://github.com "titre lien")
 
 liste :
 
@@ -17,7 +17,7 @@ liste :
 * item 3
 
 ![texte alternatif image]
-{https://picsum.photos/id/1/200/300 "Titre, image"}
+(https://picsum.photos/id/1/200/300 "Titre, image")
 
 code :
 ```
