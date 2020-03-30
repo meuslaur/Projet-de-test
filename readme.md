@@ -6,7 +6,7 @@ test push
 
 ~~Texte barré~~
 
-[GitHub](https://github.com "GitHub")
+[GitHub](https://github.com/)
 
 liste :
 
